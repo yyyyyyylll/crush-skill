@@ -1,33 +1,35 @@
-# 暧昧.skill
+<h1 align="center">暧昧.skill</h1>
 
-> *"你们搞大模型的简直是码神，你们解放了前端兄弟，还要解放后端兄弟，测试兄弟，运维兄弟，解放网安兄弟，解放ic兄弟，最后解放全人类"*
+<p align="center"><b>TA 回消息了吗？没有。那如果我发这条呢？</b></p>
 
-**TA 回消息了吗？没有。那如果我发这条呢？**
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.9%2B-blue.svg" alt="Python 3.9+"></a>
+  <a href="https://claude.ai/code"><img src="https://img.shields.io/badge/Claude%20Code-Skill-blueviolet" alt="Claude Code"></a>
+  <a href="https://agentskills.io"><img src="https://img.shields.io/badge/AgentSkills-Standard-green" alt="AgentSkills"></a>
+</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://python.org)
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/code)
-[![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green)](https://agentskills.io)
-
-&nbsp;
-
+<p align="center">
 你编辑了一条消息又删掉了？<br>
 你截图发给朋友问"这样回是不是有意思"？<br>
 你盯着"对方正在输入..."心跳加速结果等来一个"哈哈"？<br>
 你半夜翻聊天记录试图从 emoji 里读出爱情？<br>
 你想约 TA 出来但那条消息在输入框里躺了三天？<br>
+<br>
+<b>把暧昧期的忐忑交给 AI，发送前先彩排一遍。</b>
+</p>
 
-**把暧昧期的忐忑交给 AI，发送前先彩排一遍。**
-
-&nbsp;
-
+<p align="center">
 提供 crush 的聊天记录、社交媒体、你的描述<br>
-生成一个 **TA 的沟通画像**<br>
+生成一个 <b>TA 的沟通画像</b><br>
 预测 TA 怎么回你的消息，或者直接扮演 TA 跟你聊天
+</p>
 
-⚠️ **本项目仅用于个人情感辅助，不用于骚扰、跟踪或操纵他人。TA 是一个真实的人，不是攻略对象。**
+<p align="center">⚠️ <b>本项目仅用于个人情感辅助，不用于骚扰、跟踪或操纵他人。TA 是一个真实的人，不是攻略对象。</b></p>
 
-[安装](#安装) · [使用](#使用) · [效果示例](#效果示例)
+<p align="center">
+  <a href="#安装">安装</a> · <a href="#使用">使用</a> · <a href="#效果示例">效果示例</a>
+</p>
 
 ---
 
