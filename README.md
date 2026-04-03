@@ -1,4 +1,4 @@
-<h1 align="center">暧昧.skill</h1>
+<h1 align="center">crush.skill</h1>
 
 <p align="center"><b>TA 回消息了吗？没有。那如果我发这条呢？</b></p>
 
@@ -107,11 +107,11 @@ pip3 install -r requirements.txt
 ```
 用户      ❯ 今天好累啊
 
-暧昧.skill ❯ 怎么了 加班了？😂
+crush.skill ❯ 怎么了 加班了？😂
 
 用户      ❯ 嗯 搞到九点多
 
-暧昧.skill ❯ 也太惨了吧哈哈哈哈 吃饭了没
+crush.skill ❯ 也太惨了吧哈哈哈哈 吃饭了没
 ```
 
 **场景二：预测回复**
@@ -119,7 +119,7 @@ pip3 install -r requirements.txt
 ```
 用户      ❯ 我想发这条消息："周末有空吗？想去看那个展"
 
-暧昧.skill ❯ ═══ 消息预测 ═══
+crush.skill ❯ ═══ 消息预测 ═══
 
              📱 最可能 (~55%): "可以呀！几点？"
              ⏱ 5-15分钟 | 🌡 热情度 8/10
@@ -139,7 +139,7 @@ pip3 install -r requirements.txt
 ```
 用户      ❯ 帮我分析一下最近这几天的聊天
 
-暧昧.skill ❯ ═══ 信号解读报告 ═══
+crush.skill ❯ ═══ 信号解读报告 ═══
 
              📊 综合判断: 偏暖 (65% 积极信号)
 
@@ -157,7 +157,7 @@ pip3 install -r requirements.txt
 ```
 用户      ❯ 看温度计
 
-暧昧.skill ❯ ═══ 暧昧温度计 ═══
+crush.skill ❯ ═══ 暧昧温度计 ═══
 
                冷漠 | 礼貌 | 友好 | 暧昧 | 明确
                0-20 | 20-40| 40-60| 60-80| 80-100
@@ -283,7 +283,7 @@ crush-skill/
 
 本项目的架构灵感来源于 **[同事.skill](https://github.com/titanwings/colleague-skill)**（by [titanwings](https://github.com/titanwings)）和 **[前任.skill](https://github.com/therealXiaomanChu/ex-skill)**（by [therealXiaomanChu](https://github.com/therealXiaomanChu)）。
 
-同事.skill 首创了"把人蒸馏成 AI Skill"的双层架构，前任.skill 将其迁移到了恋爱场景，暧昧.skill 在此基础上聚焦暧昧期的不确定性预测。致敬两位原作者的创意和开源精神。
+同事.skill 首创了"把人蒸馏成 AI Skill"的双层架构，前任.skill 将其迁移到了恋爱场景，crush.skill 在此基础上聚焦暧昧期的不确定性预测。致敬两位原作者的创意和开源精神。
 
 本项目遵循 [AgentSkills](https://agentskills.io) 开放标准，兼容 Claude Code 和 OpenClaw。
 
