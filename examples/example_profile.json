@@ -1,0 +1,116 @@
+{
+  "version": "1.2",
+  "nickname": "咖啡同事",
+  "created_at": "2026-03-15",
+  "updated_at": "2026-04-01",
+  "data_sources": ["wechat_chat_3weeks", "user_description", "social_media_weibo"],
+  "layers": {
+    "layer_1_identity": {
+      "gender": {"value": "女", "confidence": "observed"},
+      "age_range": {"value": "25-28", "confidence": "inferred", "evidence": "用户说比自己小两三岁"},
+      "occupation": {"value": "产品经理", "confidence": "observed"},
+      "how_met": {"value": "公司新来的同事，茶水间聊天认识", "confidence": "observed"},
+      "known_duration_days": {"value": 45, "confidence": "observed"},
+      "mutual_connections": {"value": ["部门同事小王", "隔壁组的李姐"], "confidence": "observed"},
+      "basic_personality": {"value": "开朗外向但有时候突然安静，朋友很多", "confidence": "inferred", "evidence": "用户描述+朋友圈观察"}
+    },
+    "layer_2_communication": {
+      "message_length": {"value": "medium", "confidence": "observed", "evidence": "42条消息平均23字"},
+      "emoji_usage": {
+        "value": {"frequent": true, "favorites": ["😂", "🤔", "👀", "哈哈哈"]},
+        "confidence": "observed",
+        "evidence": "42条消息中28条含emoji"
+      },
+      "response_time": {
+        "value": {"typical": "10-30分钟", "range": "1分钟-3小时"},
+        "confidence": "observed",
+        "evidence": "基于35次回复的时间差统计，中位数18分钟"
+      },
+      "initiation_ratio": {
+        "value": {"them_pct": 40},
+        "confidence": "inferred",
+        "evidence": "15个话题中TA发起6个，但可能遗漏了群聊转私聊的情况"
+      },
+      "laugh_style": {"value": "哈哈哈哈（多个哈）", "confidence": "observed"},
+      "voice_vs_text": {"value": "纯文字，从未发过语音", "confidence": "observed"},
+      "punctuation": {"value": "很少用句号，偶尔用感叹号，常用波浪号~", "confidence": "observed"}
+    },
+    "layer_3_emotional": {
+      "enthusiasm_topics": {
+        "value": ["旅行（特别是日本）", "咖啡", "猫", "最近看的剧"],
+        "confidence": "inferred",
+        "evidence": "聊到这些话题时消息明显变长，emoji增多"
+      },
+      "avoidance_topics": {
+        "value": ["前任相关"],
+        "confidence": "speculative",
+        "evidence": "仅一次有人在群里提到感情话题时TA没接话，样本太少"
+      },
+      "discomfort_signals": {
+        "value": "发单个emoji后转移话题",
+        "confidence": "inferred",
+        "evidence": "出现过2次：一次被问周末计划、一次被问住哪里"
+      },
+      "humor_style": {
+        "value": "爱发表情包，偶尔吐槽，会玩公司内部梗",
+        "confidence": "observed"
+      },
+      "vulnerability_level": {
+        "value": "low-medium",
+        "confidence": "inferred",
+        "evidence": "会聊工作烦恼但不聊家庭和感情"
+      }
+    },
+    "layer_4_dynamics": {
+      "interaction_frequency": {
+        "value": "几乎每天都聊几句",
+        "trend": "increasing",
+        "confidence": "observed",
+        "evidence": "第1周3天聊一次 → 第3周每天都聊"
+      },
+      "inside_references": {
+        "value": ["茶水间咖啡机坏了的梗", "一起吐槽过的甲方"],
+        "confidence": "observed"
+      },
+      "intimacy_trajectory": {
+        "value": "双方都在推进，但用户略多",
+        "confidence": "inferred",
+        "evidence": "用户发起私人话题5次，TA发起3次"
+      },
+      "mixed_signals": {
+        "value": [
+          "会主动找你聊天但从不提线下见面",
+          "聊到很晚但第二天当没事一样"
+        ],
+        "confidence": "observed"
+      },
+      "social_media_dynamics": {
+        "value": "经常给你朋友圈点赞，偶尔评论，但stories从不回复",
+        "confidence": "observed"
+      },
+      "thermometer": {
+        "value": 62,
+        "trend": "+4/week",
+        "last_updated": "2026-04-01"
+      }
+    }
+  },
+  "gaps": [
+    "TA对邀约类消息的回应模式（目前无数据，严重影响预测约见面类消息）",
+    "TA在群聊vs私聊中对你的态度差异",
+    "TA和其他异性的互动风格（无法判断你是否是特殊对待）"
+  ],
+  "corrections": [
+    {
+      "date": "2026-03-28",
+      "predicted": "短回复，热情度4/10",
+      "actual": "发了一大段关于周末去了哪里的文字，还附了照片",
+      "adjustment": "layer_3.vulnerability_level 从 low 升级为 low-medium；TA可能比预期更愿意主动分享"
+    }
+  ],
+  "prediction_accuracy": {
+    "total_predictions": 8,
+    "correct_sentiment": 6,
+    "accuracy_pct": 75
+  }
+}
